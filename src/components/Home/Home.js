@@ -6,7 +6,7 @@ import Banner from '../Banner/Banner';
 import Review from '../Review/Review';
 
 const Home = () => {
-    const [person, setPerson] = useReview();
+    const [person, setPerson] = useReview('reviews.json');
     const navigate = useNavigate();
     return (
         <div>

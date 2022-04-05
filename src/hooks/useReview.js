@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react"
 
-const useReview = () => {
+const useReview = (jsonFile) => {
     const [person, setPerson] = useState([]);
     useEffect(() => {
-        fetch('reviews.json')
+        fetch(jsonFile)
             .then(res => res.json())
             .then(data => setPerson(data))
     }, [])

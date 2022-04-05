@@ -4,7 +4,7 @@ import useReview from '../../hooks/useReview';
 import Review from '../Review/Review';
 
 const Reviews = () => {
-    const [person, setPerson] = useReview();
+    const [person, setPerson] = useReview('reviews.json');
     return (
         <div className='container my-5'>
             <Row lg={3} xs={1} className="g-5">
