@@ -1,3 +1,7 @@
+.logo:hover {
+    color: black;
+}
+
 nav a {
     color: black;
     margin-left: 25px;
